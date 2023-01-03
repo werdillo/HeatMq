@@ -8,8 +8,10 @@ function App() {
   return <>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='/' component={Counter}/>
-         <Route path='/about' element={<div>Hello wolrd</div>} />
+         <Route path='/' component={Counter}/>
+         <Route path='cabinet' element={<div>Hello hello</div>} />
+         <Route path='log-in' element={<div>log in</div>} />
+         <Route path='sign-in' element={<div>sign in</div>} />
         </Route>
       </Routes>
   </>
