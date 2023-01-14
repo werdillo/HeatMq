@@ -1,5 +1,6 @@
 import { Outlet, A } from "@solidjs/router";
-import "../assets/scss/_layout.scss"
+import "../assets/scss/_layout.scss";
+import logo from "../assets/images/logo.svg";
 
 export default function Layout() {
 	return (
@@ -7,7 +8,9 @@ export default function Layout() {
 			<div id="container">
 				<header id="header-content">
 					<div class='nav'>
-						<A class='-link logo' href=''>HEAT</A>
+						<A class='-link logo' href=''>
+							<img src={logo} />
+						</A>
 						<A class='-link' href='/sign-in'>sign in</A>
 						<A class='-link' href='/log-in'>log in</A>
 					</div>
