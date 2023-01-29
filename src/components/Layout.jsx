@@ -8,18 +8,24 @@ export default function Layout() {
 			<div id="container">
 				<header id="header-content">
 					<div class='nav'>
-						<A class='-link logo' href=''>
-							<img src={logo} />
-						</A>
-						<A class='-link' href='/sign-in'>sign in</A>
-						<A class='-link' href='/log-in'>log in</A>
+						<div class='-item left'>
+						</div>
+						<div class='-item'>
+							<A class='-link logo' href=''>
+								<img src={logo} />
+							</A>
+						</div>
+						<div class='-item right'>
+							<A class='-link' href='/sign-in'>sign in</A>
+							<A class='-link btn' href='/log-in'>Log in</A>
+						</div>
 					</div>
 				</header>
 				<main id="main-content">
 					<Outlet />
 				</main>
 				<footer class='footer'>
-					<div>{new Date().getFullYear()}</div>
+					<div>© Heat Mq {new Date().getFullYear()}</div>
 				</footer>
 			</div>
 		</>

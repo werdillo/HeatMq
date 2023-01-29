@@ -13,29 +13,50 @@
 }
 
 .nav {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr 40% 1fr;
 	align-items: center;
 	gap:20px;
 	height: 80px;
 	padding: 0 20px;
-	background: #585858;
+	background: rgba(255, 255, 255, 0.7);
 	width: 100%;
+	border-bottom: #f6f6f6 solid 1px;
+	box-shadow: 0 5px 5px rgb(0 0 0 / 2%);
+	.-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&.left {justify-content: left;}
+		&.right {justify-content: right; gap:10px;}
+	}
 	.-link {
-		color: #fff;
-		font-size: 24px;
+		color: #1f1f1f;
+		font-size: 20px;
 		text-decoration: none;
 		&.logo { font-size: 50px;}
+		&.btn {
+			color: #f6f6f6;
+			font-size: 16px;
+			padding: 8px 16px;
+			background: rgb(121, 185, 43);
+			border-radius: 900px;
+			text-align: center;
+			font-weight: 500;
+		}
 	}
 }
 
 .footer {
 	height: 60px;
-	background: #585858;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 5px 5px rgb(0 0 0 / 2%);
+	border-top: #f6f6f6 solid 1px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	color: rgb(255, 255, 255);
-	font-size: 24px;
+	color: #1f1f1f;
+	font-size: 20px;
+	font-weight: 500;
 }
