@@ -1,8 +1,9 @@
-
-
+import "../assets/scss/_home.scss"
 
 export default function HomePage() {
 	return <>
-		Homepage
+		<div class='home-page'>
+			<div class='-container'>asd</div>
+		</div>
 	</>
 }
