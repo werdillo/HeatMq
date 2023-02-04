@@ -4,7 +4,8 @@
 	flex-direction: column;
     // background:  linear-gradient(191.41deg, #fff6ed 0%, #ffd6d6 37%, #ced9ff 84%);
 	// background: conic-gradient(from 180deg at 50% 50%, #ebe9cc 0%, #a8e8e9 30%, #f7ece1 56%, #def4f3 80.75%, #ebe9cc 100%);
-	background-image: url(../images/tree-back.jpg);
+	// background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+	background-image: url(../images/forest.jpg);
 	object-fit: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -23,6 +24,7 @@
 .nav {
 	display: grid;
 	grid-template-columns: 1fr 40% 1fr;
+	width: 100%;
 	align-items: center;
 	gap:20px;
 	height: 80px;
@@ -30,8 +32,8 @@
 	background: rgba(0, 0, 0, 0.1);
 	-webkit-backdrop-filter: blur(50px);
 	backdrop-filter: blur(50px);
-	width: 100%;
-	border-bottom: #f6f6f6 solid 1px;
+	&.home { background: rgba(255, 255, 255, 0.7);}
+	// border-bottom: #f6f6f6 solid 1px;
 	// box-shadow: 0 5px 5px rgb(0 0 0 / 2%);
 	.-item {
 		display: flex;
@@ -41,7 +43,7 @@
 		&.right {justify-content: right; gap:10px;}
 	}
 	.-link {
-		color: #1f1f1f;
+		color: #f8f8f8;
 		font-size: 20px;
 		text-decoration: none;
 		&.logo { font-size: 50px;}
@@ -59,15 +61,16 @@
 
 .footer {
 	height: 60px;
-	background: rgba(255, 255, 255, 0.8);
-	backdrop-filter: blur(25px);
+	background: rgba(0, 0, 0, 0.1);
+	-webkit-backdrop-filter: blur(50px);
+	backdrop-filter: blur(50px);
 	box-shadow: 0 5px 5px rgb(0 0 0 / 2%);
-	border-top: #f6f6f6 solid 1px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	color: #1f1f1f;
+	color: #fcfcfc;
 	font-size: 20px;
 	font-weight: 500;
+	&.home { background: rgba(255, 255, 255, 0.7);}
 }

@@ -1,6 +1,6 @@
 import { Outlet, A } from "@solidjs/router";
 import "../assets/scss/_layout.scss";
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo_white.svg";
 
 export default function Layout() {
 	return (
@@ -12,7 +12,7 @@ export default function Layout() {
 						</div>
 						<div class='-item'>
 							<A class='-link logo' href=''>
-								<img src={logo} />
+								<img src={logo} /> 
 							</A>
 						</div>
 						<div class='-item right'>
