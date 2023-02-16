@@ -8,7 +8,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
   }
   
-#container {
+.container {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -22,6 +22,11 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	&.cabinet {
+		// background: radial-gradient(circle at 10% 20%, rgb(111, 231, 176) 0%, rgb(154, 198, 242) 100.2%);
+		background: url(../images/back.png);
+		// background: url(../images/field2.jpg);
+	}
 
 }
 

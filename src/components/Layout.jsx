@@ -1,11 +1,13 @@
 import { Outlet, A } from "@solidjs/router";
 import "../assets/scss/_layout.scss";
 import logo from "../assets/images/logo_white.svg";
+import { useLocation } from "@solidjs/router";
 
-export default function Layout() {
+export default function Layout() {	
+	const location = useLocation();
 	return (
 		<>
-			<div id="container">
+			<div class={location.pathname === "/cabinet" ? "container cabinet" : "container" }>
 				<header id="header-content">
 					<div class='nav'>
 						<div class='-item left'>
