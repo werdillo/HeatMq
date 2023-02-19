@@ -25,6 +25,10 @@ body {
 	&.cabinet {
 		// background: radial-gradient(circle at 10% 20%, rgb(111, 231, 176) 0%, rgb(154, 198, 242) 100.2%);
 		background: url(../images/back.png);
+		object-fit: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		// background: url(../images/field2.jpg);
 	}
 
