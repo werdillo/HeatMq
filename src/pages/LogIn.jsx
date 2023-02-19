@@ -1,6 +1,7 @@
 import "../assets/scss/_login.scss"
-
+import {A } from "@solidjs/router";
 export default function LogIn() {
+
   return (
 	<div class='login-form'>
 		<div class='-container'>
@@ -8,7 +9,10 @@ export default function LogIn() {
 			<input class='-input'/>
 			<div class='-text'>Password</div>
 			<input class='-input' type="password"/>
-			<button class="-button">Login</button>
+			  <A class='-link logo' href='/cabinet'>
+				  <button class="-button">Login</button>
+			  </A>
+			
 		</div>
 	</div>
   )
